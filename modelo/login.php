@@ -29,9 +29,8 @@ if((isset($_POST['enviar']))){
                 if($ejecutar){
                 
                  // header ('location: bitacora.php');
-                 
                     echo "Bienvenido";
-                    header('Location: ../modelo/bitacora.php');
+                    header('Location: http://localhost/gestionvehiculo/modelo/bitacora.php');
                     // $i=0;
     
                     // while($fila = mysqli_fetch_array($ejecutar)){
