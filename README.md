@@ -1,2 +1,8 @@
-# E-S-Veh-culos
+# E-S-Vehiculos
 Entrada y salida de vehículos
+
+VERSION 1
+MEJORAS POR HACER
+-VALIDAR DATOS INGRESADOS EN EL FORMULARIO
+-CONECTAR POR PDO 
+-OTRAS.
