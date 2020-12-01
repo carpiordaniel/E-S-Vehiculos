@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos-index.css">
     <title> GESTIÓN VEHÍCULOS PG</title>
 </head>
 <body>
 
-<form action="" method="post">
-    <input type="email" name="correoForm" placeholder="Correo ">
-    <input type="password" name="passwordForm" placeholder="Contraseña ">
-    <!-- <input type="text" name="nombreForm" placeholder="CI: "> -->
-    <br>
-    <br>
-    <input type="submit" name="enviar" value="Ingresar">
-    <br>
-    <strong>
-    <?php include_once("modelo/login.php"); ?>
+    <div class="container">
+        
+        <div class="formulario-login">
     
-    </strong>
+            <form action="" method="post">
+                <div class="img-login">
+                    <img src="img/login.png" alt="">
+                </div>
+                <input type="email" name="correoForm" placeholder=" Correo ">
+                <input type="password" name="passwordForm" placeholder=" Contraseña ">
+                <!-- <input type="text" name="nombreForm" placeholder="CI: "> -->
+              
+                <input class="boton-login" type="submit" name="enviar" value="Ingresar">
+             
+                <p>
+                <?php include_once("modelo/login.php"); ?>
+                
+                </p>
+            
+            </form>
+    
+        </div>
 
-</form>
+    </div>
+
+      
+</body>
+</html>

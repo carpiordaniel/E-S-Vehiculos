@@ -1,0 +1,146 @@
+:root{
+
+    --color-turquesa: #113E4D;
+    --color-turquesa-dos: #277C97;
+    --color-blanco:#FFFFFF;
+    --color-gris: #5a5a5a;
+    --fuente: 'Roboto', sans-serif;
+    --tamanio-titulo:30px;
+    --tamanio-subtitulo: 22px;
+    --tamanio-texto:18px;
+    --tamanio-texto-responsive:14px;
+}
+body{
+    background: var(--color-turquesa);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+}
+header{
+    background: var(--color-turquesa-dos) ;
+    text-align: right;
+}
+.datos-session{
+    color: var(--color-blanco);
+    width: 90%;
+    margin: 0 auto;
+}
+.titulo-bitacora{
+    text-align: center;
+    color: var(--color-blanco);
+    font-size: var(--tamanio-subtitulo);
+}
+.titulo-bitacora p{
+    margin-bottom: 0;
+}
+.boton-cerrar-sesion{
+    background:  var(--color-turquesa-dos);
+    color: var(--color-blanco);
+    border: none;
+    padding: .1rem;
+    margin: 1rem .5rem;
+}
+.boton-cerrar-sesion:hover{
+    cursor: pointer;
+}
+.datos-salida-entrada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem auto;
+    width: 90%;
+    height: auto;
+    max-width: 90rem;
+}
+.formulario-salida p, .formulario-llegada p{
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: var(--tamanio-subtitulo);
+}
+.formulario-salida label, .formulario-llegada label{
+    display: block;
+    color: var(--color-blanco);
+    width: 8rem;
+    font-weight: 200;
+    position: relative;
+    top: 0;
+    margin-top: .5rem;
+    font-size: var(--tamanio-texto);
+}
+.formulario-salida, .formulario-llegada{
+    width: 90%;
+    margin:  0 auto;
+}
+.formulario-salida input[type="number"],
+.formulario-llegada input[type="number"]
+{
+    appearance: textfield ;
+    margin: 0;
+    appearance:textfield ;
+}
+
+.placa, .km-llegada{
+    height: 1.5rem;
+}
+textarea, .km-salida, .btn-e-s, .km-llegada{
+    width: 100%;
+    max-width: 30rem;
+    min-width: 70%;
+    height: 8rem;
+    max-height: 8rem;
+    min-height: 8rem;
+}
+.km-salida, .km-llegada{
+    height: 1.5rem;
+    min-height: 1rem;
+}
+.btn-e-s{
+    text-align: center;
+}
+.boton-e-s, .boton-consul{
+    color:var(--color-blanco);
+    background: var(--color-turquesa-dos) ;
+    border: none;
+    font-size: var(--tamanio-texto-responsive);
+    font-weight: 200;
+    margin-top: 1.5rem;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.boton-e-s:hover, .boton-consul{
+    cursor: pointer;
+}
+
+.resultado-consulta{
+    background: var(--color-blanco);
+    height: 15rem;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.consulta-historial{
+    width: 90%;
+    max-width: 100rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    
+}
+.mostrar-datos{
+    margin:  0 auto;
+}
+.mostrar-datos label{
+    color: var(--color-blanco);
+    font-weight: 200;
+}
+.container-consulta{
+    display: inline-grid;
+}
+@media only screen and (max-width:800px){
+.datos-salida-entrada{
+    grid-template-columns: 1fr;
+}
+}

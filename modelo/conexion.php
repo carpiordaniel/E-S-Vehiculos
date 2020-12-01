@@ -2,8 +2,8 @@
 
 
 $server = "localhost";
-$userHost = "prirodadmin";
-$passHost = "masterkey";
+$userHost = "root";
+$passHost = "1234";
 $dbHost = "gestionvehiculos";
 
 $con = mysqli_connect($server, $userHost, $passHost, $dbHost) 
